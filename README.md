@@ -1,8 +1,8 @@
 # projetoexpress
 
-npm init -y
-npm i express body-parser
-npm run server
+## npm init -y
+## npm i express body-parser
+## npm run server
 
 
     var express = require('express');

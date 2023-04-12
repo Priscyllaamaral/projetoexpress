@@ -4,6 +4,8 @@
 ## npm i express body-parser
 ## npm run server
 
+### utlizar o postman para testar as rotas
+
 
     var express = require('express');
     var bodyparser = require('body-parser');

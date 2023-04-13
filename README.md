@@ -31,29 +31,28 @@
     });
 
     app.delete('/post/:nome', function (req,res){
-        let y = posts.find(x => x.nome == req.params.nome);
-        res.send(y)
-        console.log(y)
+        posts = posts.filter(x => x.nome != req.params.nome);
+        res.send(posts);
     });
 
     app.patch('/post/:nome', function (req,res){
-        let y = posts.find(x => x.nome == req.params.nome);
+        let usuario = posts.find(x => x.nome == req.params.nome);
 
-        y.nome = req.body.nome;
-        y.idade = req.body.idade;
+        usuario.nome = req.body.nome;
+        usuario.idade = req.body.idade;
 
-        res.send(y)
-    })
+        res.send(usuario)
+    });
 
     app.put('/post/:nome', function(req,res){
-        let y = posts.find(x => x.nome == req.params.nome);
+        let usuario = posts.find(x => x.nome == req.params.nome);
 
-        y.nome = req.body.nome;
-        y.idade = req.body.idade;
+        usuario.nome = req.body.nome;
+        usuario.idade = req.body.idade;
 
-        res.send(y)
+        res.send(usuario)
 
-    })
+    });
 
     app.listen(3000, function() {
         console.log('App de Exemplo escutando na porta 3000!');

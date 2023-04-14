@@ -13,7 +13,7 @@
     var app = express();
     var wiki = require('./router/index');
 
-
+    //body-parser extracts the entire body portion of an incoming request stream and exposes it on req.body
     app.use(bodyparser.json());
     app.use("/", wiki);
 

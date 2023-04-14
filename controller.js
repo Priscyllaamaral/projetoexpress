@@ -1,4 +1,4 @@
-// arquivo chamado index.js dentro da pasta contoller
+// arquivo chamado index.js dentro da pasta controller
 
       const modulo = require('../modulo');
       let posts = [];

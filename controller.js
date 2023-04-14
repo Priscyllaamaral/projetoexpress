@@ -1,4 +1,4 @@
-# arquivo chamado index.js
+// arquivo chamado index.js dentro da pasta contoller
 
       const modulo = require('../modulo');
       let posts = [];
